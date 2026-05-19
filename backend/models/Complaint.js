@@ -53,6 +53,16 @@ const ComplaintSchema = new mongoose.Schema({
     type: String
   },
 
+  aiSentiment: {
+    type: String,
+    default: "Neutral"
+  },
+
+  aiUrgencyScore: {
+    type: Number,
+    default: 5
+  },
+
   createdAt: {
     type: Date,
     default: Date.now
